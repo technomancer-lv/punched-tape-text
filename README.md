@@ -5,10 +5,9 @@ Program is written on Python and is tested as fully working on Raspberry Pi. In 
 Usage is simple - You run program with text as argument. You'll get binary data as output. You can forward that data to file to save or directly to serial port where tape punch is connected and text will be seen on tape. If command is run with no file or port to be forwarded, it will simply print some gibberish on screen.
 Escaped hex data can be output to form unusual patterns or symbols. Escaped data is not converted in any way, it's only output as is - one byte. For example \x1E will output one byte 00011110 instead of four visible symbols.
 
-
-Example commands:
-Convert text to binary and save to file:
-./tapetext.py "some text here" > binary_text.bin
+  Example commands:
+  Convert text to binary and save to file:
+  ./tapetext.py "some text here" > binary_text.bin
 
 Convert text and output binary data directly to preconfigured port:
 ./tapetext.py "some other text here" > /dev/ttyS0
